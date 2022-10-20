@@ -101,6 +101,3 @@ def tictactoe():
 
 tictactoe()
 actualboard()
-        
-
-        

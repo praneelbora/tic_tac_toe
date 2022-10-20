@@ -15,9 +15,6 @@ def check():
     if(list[0][2]==list[1][1]==list[2][0] and list[1][1]!=' ' and list[1][1]!='_'):  #diagonal 2
         return list[1][1]
     return -1
-
-check()
-
 def printf():
     print()
     for i in {0,1,2}:
@@ -26,8 +23,9 @@ def printf():
             if(j<2):
                 print("|",end='')
         print()
-    print()
-            
+    print()   
+
+check()     
 turn=1
 while(True):
     printf()
@@ -38,23 +36,19 @@ while(True):
         if list[(int)((inp-1)/3)][(inp-1)%3]=='X' or list[(int)((inp-1)/3)][(inp-1)%3]=='O':
             print("\nWrong input, please play again")
             continue
-
     if (turn%2==0):
         print("O plays\nWhich block do you choose? ")
         inp=int(input())
         if list[(int)((inp-1)/3)][(inp-1)%3]=='X' or list[(int)((inp-1)/3)][(inp-1)%3]=='O':
             print("\nWrong input, please play again")
             continue
-
     list[(int)((inp-1)/3)][(inp-1)%3]='X' if turn%2==1 else 'O'
     if(check()!=-1):
         printf()
         print(check()," Wins\n")
         break
-
     turn+=1
     if turn==10:
         printf()
-        print("\nDraw")
+        print("\nDraw\n")
         break
-    
