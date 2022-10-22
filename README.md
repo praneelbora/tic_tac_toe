@@ -7,9 +7,9 @@
 #### The players have to enter grid numbers of the grid shown to enter their choice to play
 
 #### The grid is shown as 
-#### \_|\_|_
-#### \_|\_|_
-####  | | 
+#### . \_|\_|_
+#### . \_|\_|_
+#### .  | | 
 
 #### Each box is numbered in such a way: 
 
