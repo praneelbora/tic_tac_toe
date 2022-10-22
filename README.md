@@ -4,7 +4,7 @@
 #### _____________________________________________________________________________________________
 #### The user can play a player vs player match where the first player is X and the second is O
 #### _____________________________________________________________________________________________
-#### The players have to enter grid numbers of the grid shown to enter their choice to play
+#### The players have to enter grid numbers of the grid shown to play.
 
 #### In the grid used in the game, each box is numbered in such a way: 
 
