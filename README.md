@@ -6,12 +6,7 @@
 #### _____________________________________________________________________________________________
 #### The players have to enter grid numbers of the grid shown to enter their choice to play
 
-#### The grid is shown as 
-#### . \_|\_|_
-#### . \_|\_|_
-#### .  | | 
-
-#### Each box is numbered in such a way: 
+#### In the grid used in the game, each box is numbered in such a way: 
 
 #### 1|2|3
 #### 4|5|6
