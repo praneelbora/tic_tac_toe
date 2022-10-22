@@ -1,8 +1,5 @@
 list=[['_','_','_'],['_','_','_'],[' ',' ',' ']]
-win='a'
-
 def check():
-    win=' '
     for i in range(3):
         if  (list[i][0]==list[i][1]==list[i][2] and list[i][0]!=' ' and list[i][0]!='_'):   #rows
             return list[i][0]
