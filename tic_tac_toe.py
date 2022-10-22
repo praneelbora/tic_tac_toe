@@ -20,7 +20,13 @@ def printf():
                 print("|",end='')
         print()
     print()   
-
+def cond(inp):
+    if(inp>=10):
+        return 1
+    if list[(int)((inp-1)/3)][(inp-1)%3]=='X' or list[(int)((inp-1)/3)][(inp-1)%3]=='O':
+        return 1
+    return 0
+            
 check()     
 turn=1
 while(True):
@@ -29,13 +35,13 @@ while(True):
     if (turn%2==1):
         print("X plays\nWhich block do you choose? ")
         inp=int(input())
-        if list[(int)((inp-1)/3)][(inp-1)%3]=='X' or list[(int)((inp-1)/3)][(inp-1)%3]=='O':
+        if(cond(inp)==1):
             print("\nWrong input, please play again")
             continue
     if (turn%2==0):
         print("O plays\nWhich block do you choose? ")
         inp=int(input())
-        if list[(int)((inp-1)/3)][(inp-1)%3]=='X' or list[(int)((inp-1)/3)][(inp-1)%3]=='O':
+        if(cond(inp)==1):
             print("\nWrong input, please play again")
             continue
     list[(int)((inp-1)/3)][(inp-1)%3]='X' if turn%2==1 else 'O'
