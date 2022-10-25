@@ -1,3 +1,6 @@
+import pygame
+
+
 list=[['_','_','_'],['_','_','_'],[' ',' ',' ']]
 def check():
     for i in range(3):
@@ -29,6 +32,12 @@ def cond(inp):
             
 check()     
 turn=1
+clock = pygame.time.Clock()
+
+print("\nThese are the numberings on the grid:")
+print("1|2|3\n4|5|6\n7|8|9")
+for i in range(10):
+    clock.tick(1)
 while(True):
     printf()
     inp=''
